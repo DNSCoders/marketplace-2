@@ -44,7 +44,7 @@
                     <a href="<?= base_url(); ?>reset-password">Forgot Password?</a>
                 </div>
 
-                <div class="button-action">
+                <div class="button-action" style="margin-top:5rem;">
                     <button type="submit" class="btn btn-block login-btn">Login</button>
                     <button class="btn btn-block btn-dark mt-3 mb-1 register-btn">
                         <a href="<?= base_url(); ?>register">Daftar</a>

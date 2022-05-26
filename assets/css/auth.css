@@ -35,13 +35,13 @@ div.wrapper {
 	height: 100%;
 	padding-left: 60px;
 	padding-right: 60px;
-	padding-top: 60px;
+	padding-top: 40px;
 }
 
 .button-action {
 	display: flex;
 	flex-direction: column;
-	margin-top: 5rem;
+	/* margin-top: 5rem; */
 }
 
 .input-form input {
@@ -85,9 +85,42 @@ div.wrapper {
 	color: #ffffff;
 	font-weight: bold;
 }
+@media screen and (max-width: 280px) {
+	.logo {
+		display: none;
+	}
+
+	.box {
+		width: 371px;
+	}
+}
 
 @media screen and (max-width: 400px) {
 	div.wrapper {
 		width: 90%;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.box {
+		width: 371px;
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.logo {
+		display: none;
+	}
+
+	.box {
+		margin-top: 2rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.logo {
+		display: none;
 	}
 }
