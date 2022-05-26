@@ -29,7 +29,7 @@
   <div class="content">
     <div class="box">
       <?php echo $this->session->flashdata('failed'); ?>
-      <form action="<?= base_url(); ?>login?redirect=<?= $redirect; ?>" method="post">
+      <form action="<?= base_url(); ?>register" method="post">
         <div class="form-group input-form">
           <label for="exampleInputEmail1">Nama Lengkap</label>
           <input type="text" placeholder="Nama Lengkap" name="name" class="form-control" autocomplete="off" value="<?php echo set_value('name'); ?>">
