@@ -213,6 +213,7 @@ footer {
 }
 
 footer.bg-light {
+	background-color: #0b0d17 !important;
 	border-top: 1px solid #d6d6d6;
 }
 
