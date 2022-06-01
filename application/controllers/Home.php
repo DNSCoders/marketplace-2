@@ -27,7 +27,7 @@ class Home extends CI_Controller {
 		$data['allProducts'] = $this->db->get('products');
 		$this->verify_web_authentication();
 		$this->load->view('templates/header', $data);
-		$this->load->view('templates/navbar');
+		$this->load->view('templates/navbarv2');
 		$this->load->view('templates/banner');
 		$this->load->view('index', $data);
 		$this->load->view('templates/footer');
