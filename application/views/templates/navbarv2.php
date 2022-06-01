@@ -169,4 +169,4 @@ $settingss = $this->db->get('settings')->row_array();
     --><button type="submit">Cari</i></button>
   </form>
 </div>
-<div class="top-nav"></div>
+<!-- <div class="top-nav"></div> -->
