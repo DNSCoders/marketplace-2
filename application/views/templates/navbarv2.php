@@ -74,7 +74,10 @@ $settingss = $this->db->get('settings')->row_array();
     <?php if(!$this->session->userdata('login')){ ?>
       <div class="for-hidden">
         <!-- <i class="fa text-light mr-3 icon-search-navbar fa-search"></i> -->
-        <a href="<?= base_url(); ?>login" class="btn btn-sm btn-outline-dark ml-2"><i class="fa fa-sign-in-alt"></i> Login</a>
+        <a href="<?= base_url(); ?>login" class="btn btn-sm ml-2" style="border: 1px solid #C1903C;border-radius:25px;padding:5px 15px 5px 15px;">
+          <!-- <i class="fa fa-sign-in-alt"></i>  -->
+          Login
+        </a>
       </div>
     <?php }else{ ?>
       <div>

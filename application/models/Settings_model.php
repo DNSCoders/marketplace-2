@@ -252,10 +252,10 @@ class Settings_model extends CI_Model {
       $img = $upload['file']['file_name'];
       $url = $this->input->post('url', true);
       $info = getimagesize(base_url() . 'assets/images/banner/' . $img);
-      if($info[0] != 1600 || $info[1] != 400){
-        unlink("./assets/images/banner/$img");
-        return false;
-      }else{
+      // if($info[0] != 1600 || $info[1] != 400){
+      //   unlink("./assets/images/banner/$img");
+      //   return false;
+      // }else{
         if($url == ""){
           $FixUrl = "#";
         }else{
@@ -267,7 +267,7 @@ class Settings_model extends CI_Model {
         ];
         $this->db->insert('banner', $data);
         return true;
-      }
+      // }
     }
 
     public function editDescription(){
