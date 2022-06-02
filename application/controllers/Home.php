@@ -10,6 +10,7 @@ class Home extends CI_Controller {
 		$this->load->model('Products_model');
 		$this->load->model('Settings_model');
 		$this->load->model('Promo_model');
+		$this->load->model("Testi_model");
 		$this->load->helper('cookie');
 	}
 
@@ -25,11 +26,13 @@ class Home extends CI_Controller {
 		$data['recent'] = $this->Products_model->getProductsLimit();
 		$data['best'] = $this->Products_model->getBestProductsLimit();
 		$data['allProducts'] = $this->db->get('products');
+		$data['testi'] = $this->Testi_model->getTesti();
 		$this->verify_web_authentication();
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/navbarv2');
 		$this->load->view('templates/banner');
 		$this->load->view('index', $data);
+		$this->load->view('page/testiv2', $data);
 		$this->load->view('templates/footer');
 	}
 
