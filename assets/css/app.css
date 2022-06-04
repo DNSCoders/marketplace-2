@@ -2,6 +2,8 @@ a:hover {
 	text-decoration: none;
 }
 
+.talkbubble { position: relative;top: 0; left: 50%; width: 0; height: 0; border-top: 20px solid #fff; border-left: 10px solid transparent; border-right: 10px solid transparent; }
+
 i.loading-animation {
 	animation: loading 1.5s infinite linear;
 }

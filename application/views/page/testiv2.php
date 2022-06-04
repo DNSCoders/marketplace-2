@@ -40,24 +40,27 @@
                 for($j=$i * 2; $j < ($i * 2)+2; $j++){ 
                     ?>
                     <div class="col-lg-4 mb-4">
-                        <div class="card" style="min-height:220px;">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
-                            <h5 class="card-title"><?= $data[$j]['name']; ?></h5>
+                        <div class="card" style="min-height:220px;border:none;background-color:transparent;">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center text-center" style="background-color:#fff;border-clip:border-box;border-radius:20px;">
+                            <!-- <h5 class="card-title"><?= $data[$j]['name']; ?></h5> -->
                             <p class="card-text"><?= $data[$j]['content']; ?></p>
                         </div>
-                        <!-- <div class="card-footer">
-                            <img src="<?= $data[$j]['photo']; ?>" alt="">
-                            <div>
+                        <div class="talkbubble">
+                        </div>
+                        <div class="card-footer d-flex justify-content-center" style="border:none;background-color:transparent;">
+                            <img src="<?= base_url('/assets/images/testimonial/').($data[$j]['photo'] ? $data[$j]['photo'] : "Photo.png" ) ?>" style="height:56px;width:56px;border-radius:50%;" alt="">
+                            <div class="ml-3">
                                 <?php 
                                     $split = explode("-",$data[$j]['name']);
                                     $nama = $split[0];
                                     $alamat = $split[1];
                                 ?>
-                                <h5 class="card-title"><?= $nama ?></h5>
-                                <h5 class="card-title"><?= $alamat ?></h5>
+                                <span style="font-size : 18px;font-weight:700;"><?= $nama ?></span>
+                                <br>
+                                <span style="font-size : 14px;font-weight:400;"><?= $alamat ?></span>
 
                             </div>
-                        </div> -->
+                        </div>
                         </div>
                     </div>
                 <?php } ?>
