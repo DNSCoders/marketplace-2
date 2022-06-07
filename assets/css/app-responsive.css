@@ -1,8 +1,8 @@
 /* navbar */
 @media screen and (max-width: 800px) {
-	.fixed-top {
+	/* .fixed-top { */
 		/* position: relative !important; */
-	}
+	/* } */
 
 	nav.navbar a.navbar-brand h3 {
 		font-size: 23px;
