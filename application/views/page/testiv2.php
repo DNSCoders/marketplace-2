@@ -23,7 +23,7 @@
 </div> -->
 <div class="wrapper d-flex justify-content-center align-items-center" style="background-color: #F7F7F7 !important;height:672px;">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <div class="title-head" style="margin-bottom:103px;">
+    <div class="title-head mb-5">
         <h2 class="title text-center">Our clients stories</h2>
     </div>
       <ol class="carousel-indicators">
@@ -39,7 +39,7 @@
                 $data = $testi->result_array();
                 for($j=$i * 2; $j < ($i * 2)+2; $j++){ 
                     ?>
-                    <div class="col-lg-4 mb-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="card" style="min-height:220px;border:none;background-color:transparent;">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center text-center" style="background-color:#fff;border-clip:border-box;border-radius:20px;">
                             <!-- <h5 class="card-title"><?= $data[$j]['name']; ?></h5> -->
@@ -48,7 +48,9 @@
                         <div class="talkbubble">
                         </div>
                         <div class="card-footer d-flex justify-content-center" style="border:none;background-color:transparent;">
-                            <img src="<?= base_url('/assets/images/testimonial/').($data[$j]['photo'] ? $data[$j]['photo'] : "Photo.png" ) ?>" style="height:56px;width:56px;border-radius:50%;" alt="">
+                            <div>
+                                <img src="<?= base_url('/assets/images/testimonial/').($data[$j]['photo'] ? $data[$j]['photo'] : "Photo.png" ) ?>" style="height:56px;width:56px;border-radius:50%;" alt="">
+                            </div>
                             <div class="ml-3">
                                 <?php 
                                     $split = explode("-",$data[$j]['name']);
