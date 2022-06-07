@@ -101,28 +101,19 @@
     <div class="description">
         <h2 class="font-weight-bold text-center">Related product</h2>
         <div class="main-product">
-            <!-- <?php var_dump($product) ?> -->
+
             <?php if ($products->num_rows() > 0) { ?>
-                <?php foreach ($products->result_array() as $p) : ?>
-                    <a href="<?= base_url(); ?>p/<?= $p['slug']; ?>">
-                        <div class="card">
-                            <img src="<?= base_url(); ?>assets/images/product/<?= $p['img']; ?>" class="card-img-top">
-                            <div class="card-body">
-                                <p class="card-text mb-0"><?= $p['title']; ?></p>
-                                <?php if ($setting['promo'] == 1) { ?>
-                                    <?php if ($p['promo_price'] == 0) { ?>
-                                        <p class="newPrice">Rp <?= str_replace(",", ".", number_format($p['price'])); ?></p>
-                                    <?php } else { ?>
-                                        <p class="oldPrice mb-0">Rp <?= str_replace(",", ".", number_format($p['price'])); ?></p>
-                                        <p class="newPrice">Rp <?= str_replace(",", ".", number_format($p['promo_price'])); ?></p>
-                                    <?php } ?>
-                                <?php } else { ?>
-                                    <p class="newPrice">Rp <?= str_replace(",", ".", number_format($p['price'])); ?></p>
-                                <?php } ?>
-                            </div>
+                <div style="display: flex;">
+                    <?php foreach ($products->result_array() as $p) : ?>
+
+                        <div class="card" style="flex:1;align-items: center;">
+                            <a href=" <?= base_url(); ?>p/<?= $p['slug']; ?>" style="display:flex;justify-content: center;">
+                                <img src="<?= base_url(); ?>assets/images/product/<?= $p['img']; ?>" class="card-img-top">
+                            </a>
                         </div>
-                    </a>
-                <?php endforeach; ?>
+
+                    <?php endforeach; ?>
+                </div>
                 <div class="clearfix"></div>
             <?php } else { ?>
                 <div class="alert alert-warning">Upss. Tidak ada produk yang dapat ditampilkan</div>
