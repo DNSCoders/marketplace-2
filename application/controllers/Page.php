@@ -18,7 +18,7 @@ class Page extends CI_Controller {
 			$data['css'] = 'page';
 			$data['page'] = $page;
 			$this->load->view('templates/header', $data);
-			$this->load->view('templates/navbar');
+			$this->load->view('templates/navbarv2');
 			$this->load->view('page/page', $page);
 			$this->load->view('templates/footer_notmpl');
 		}
@@ -82,7 +82,7 @@ class Page extends CI_Controller {
 		$data['responsive'] = 'product-responsive';
 		$data['q'] = $q;
 		$this->load->view('templates/header', $data);
-		$this->load->view('templates/navbar');
+		$this->load->view('templates/navbarv2');
 		$this->load->view('page/search', $data);
 		$this->load->view('templates/footerv2');
 	}

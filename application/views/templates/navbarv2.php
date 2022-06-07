@@ -15,7 +15,7 @@ $menu = $this->db->get('menu');
 $settingss = $this->db->get('settings')->row_array();
 ?>
 <nav class="navbar fixed-top navbar-expand-lg" style="background-color: <?= $this->Settings_model->general()["navbar_color"]; ?> !important">
-  <div class="container-fluid p-5">
+  <div class="container-fluid">
   <a class="navbar-brand mr-5" href="<?= base_url(); ?>"><img src="<?= base_url(); ?>assets/images/logo/<?= $settingss['logo']; ?>" alt="logo" width="100"></a>
 
     <div class="collapse navbar-collapse ml-3" id="navbarSupportedContent">
@@ -113,7 +113,7 @@ $settingss = $this->db->get('settings')->row_array();
 
   </div>
 </nav>
-<div class="dropdown-mobile-menu" style="background-color: <?= $this->Settings_model->general()["navbar_color"]; ?> !important">
+<div class="dropdown-mobile-menu pt-5" style="background-color: <?= $this->Settings_model->general()["navbar_color"]; ?> !important">
   <?php foreach($menu->result_array() as $m): ?>
     <?php if($this->Settings_model->getSubMenu($m['id'])->num_rows() > 0){ ?>
       <div class="dropdown">

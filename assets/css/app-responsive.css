@@ -1,7 +1,7 @@
 /* navbar */
 @media screen and (max-width: 800px) {
 	.fixed-top {
-		position: relative !important;
+		/* position: relative !important; */
 	}
 
 	nav.navbar a.navbar-brand h3 {
@@ -216,11 +216,11 @@
 	}
 
 	div.carousel img {
-		height: 230px;
+		/* height: 230px; */
 		left: 50%;
 		position: relative;
 		transform: translate(-50%, 0);
-		width: auto;
+		/* width: auto; */
 	}
 }
 
