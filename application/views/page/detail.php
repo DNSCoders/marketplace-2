@@ -106,7 +106,7 @@
                 <div style="display: flex;">
                     <?php foreach ($products->result_array() as $p) : ?>
 
-                        <div class="card" style="flex:1;align-items: center;">
+                        <div class="" style="flex:1;align-items: center;">
                             <a href=" <?= base_url(); ?>p/<?= $p['slug']; ?>" style="display:flex;justify-content: center;">
                                 <img src="<?= base_url(); ?>assets/images/product/<?= $p['img']; ?>" class="card-img-top">
                             </a>
@@ -119,6 +119,41 @@
                 <div class="alert alert-warning">Upss. Tidak ada produk yang dapat ditampilkan</div>
             <?php } ?>
         </div>
+
+        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="title-head mb-5">
+            </div>
+            <ol class="carousel-indicators">
+                <?php for ($i = 0; $i < ($products->num_rows() / 3); $i++) { ?>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $i ?>" class="active"></li>
+                <?php } ?>
+            </ol>
+            <div class="carousel-inner" style="margin-bottom:100px;">
+                <?php for ($i = 0; $i < ($products->num_rows() / 3); $i++) { ?>
+                    <div class="carousel-item <?= $i == 0 ? 'active' : '' ?>">
+                        <div class="container-fluid row d-flex justify-content-center">
+                            <?php
+                            $data = $products->result_array();
+                            for ($j = $i * 3; $j < ($i * 3) + 3; $j++) {
+                            ?>
+                                <a href=" <?= base_url(); ?>p/<?= $data[$j]['slug']; ?>" style="display:flex;justify-content: center;">
+                                    <img src="<?= base_url(); ?>assets/images/product/<?= $data[$j]['img']; ?>" class="card-img-top">
+                                </a>
+                            <?php } ?>
+                        </div>
+                    </div>
+                <?php } ?>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div> -->
     </div>
     <hr>
 </div>
