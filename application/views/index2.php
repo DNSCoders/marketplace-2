@@ -1,4 +1,4 @@
-2<div class="category-menu">
+<div class="category-menu">
     <div class="main-category">
       <div class="item" data-toggle="modal" data-target="#modalMoreCategory">
           <img src="<?= base_url(); ?>assets/images/icon/category-more.svg">
