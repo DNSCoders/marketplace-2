@@ -72,6 +72,7 @@
 
 <!-- <?php if($best->num_rows() > 0){ ?>
 <div class="product-wrapper best-product">
+  UPDATE UPDATE UPDATE
   <h2 class="title">PRODUK TERLARIS</h2>
   <hr>
   <div class="main-product">
