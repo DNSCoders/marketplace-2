@@ -105,7 +105,8 @@
 
 <div class="product-wrapper">
   <h2 class="title text-center">Islamic Home Decoration</h2>
-  <hr>
+  <p class="text-center">“ The interior can reflect who the owner is ”</p>
+  <!-- <hr> -->
   <div class="main-product ">
     <?php if($allProducts->num_rows() > 0){ ?>
     <?php foreach($allProducts->result_array() as $p): ?>
