@@ -1,4 +1,4 @@
-<div class="category-menu">
+<!-- <div class="category-menu">
     <div class="main-category">
       <div class="item" data-toggle="modal" data-target="#modalMoreCategory">
           <img src="<?= base_url(); ?>assets/images/icon/category-more.svg">
@@ -13,10 +13,10 @@
         </a>
       <?php endforeach; ?>
     </div>
-</div>
+</div> -->
 
 <!-- Modal More Category -->
-<div class="modal fade" id="modalMoreCategory" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!-- <div class="modal fade" id="modalMoreCategory" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -39,7 +39,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <?php if($promo->num_rows() > 0){ ?>
 <?php if($setting['promo'] == 1){ ?>
