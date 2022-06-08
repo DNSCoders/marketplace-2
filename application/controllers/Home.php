@@ -14,7 +14,12 @@ class Home extends CI_Controller {
 		$this->load->helper('cookie');
 	}
 
-	public function index(){
+	public function index($page = null){
+		
+		$data['page'] = $page ? $page : 1;
+		$data['perpage'] = 12 * $data['page'];
+		
+		
 		$data['title'] =  $this->Settings_model->general()["slogan"];
 		$data['css'] = 'style';
 		$data['responsive'] = 'style-responsive';
@@ -25,7 +30,9 @@ class Home extends CI_Controller {
 		$data['getPromo'] = $this->Promo_model->getPromoLimit();
 		$data['recent'] = $this->Products_model->getProductsLimit();
 		$data['best'] = $this->Products_model->getBestProductsLimit();
-		$data['allProducts'] = $this->db->get('products');
+		$data['countProduct'] = $this->db->get('products')->num_rows();
+		$data['allProducts'] = $this->Products_model->getProductsLimit2($data['perpage']);
+		
 		$data['testi'] = $this->Testi_model->getTesti();
 		$this->verify_web_authentication();
 		$this->load->view('templates/header', $data);

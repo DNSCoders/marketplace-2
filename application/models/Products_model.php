@@ -206,6 +206,15 @@ class Products_model extends CI_Model {
         return $this->db->get();
     }
 
+    public function getProductsLimit2($limit){
+        $this->db->select("*");
+        $this->db->from("products");
+        $this->db->order_by("id", "desc");
+        $this->db->limit($limit);
+        $this->db->where('publish', 1);
+        return $this->db->get();
+    }
+
     public function getBestProductsLimit(){
         $this->db->select("*");
         $this->db->from("products");

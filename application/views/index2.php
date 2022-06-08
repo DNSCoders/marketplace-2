@@ -113,28 +113,16 @@
         <a href="<?= base_url(); ?>p/<?= $p['slug']; ?>">
           <div class="card">
             <img src="<?= base_url(); ?>assets/images/product/<?= $p['img']; ?>" class="card-img-top" >
-            <!-- <div class="card-body">
-              <p class="card-text mb-0"><?= $p['title']; ?></p>
-              <?php if($setting['promo'] == 1){ ?>
-              <?php if($p['promo_price'] == 0){ ?>
-                    <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
-                <?php }else{ ?>
-                    <p class="oldPrice mb-0">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
-                    <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['promo_price'])); ?></p>
-                <?php } ?>
-                <?php }else{ ?>
-                    <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
-                <?php } ?>
-            </div> -->
           </div>
         </a>
     <?php endforeach; ?>
     <div class="clearfix"></div>
+    
     <?php }else{ ?>
       <div class="alert alert-warning">Upss.. Belum ada produk!</div>
     <?php } ?>
   </div>
-  <?php if($allProducts->num_rows() > 12){ ?>
-    <a href="<?= base_url(); ?>products"><button class="more">Selengkapnya</button></a>
+  <?php if($countProduct > $allProducts->num_rows()){ ?>
+    <a href="<?= base_url(); ?>product/<?php echo $page+1 ?>"><button class="more">Load More</button></a>
   <?php } ?>
 </div>
