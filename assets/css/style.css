@@ -274,16 +274,17 @@ div.product-wrapper div.main-product div.card div.card-body p.newPrice {
 }
 
 div.product-wrapper button.more {
-	background-color: white;
-	border: 1px solid #008cd7;
-	border-radius: 3px;
-	color: #008cd7;
-	font-size: 15px;
+	background-color: #CA993B;
+	border: none;
+	border-radius: 30px;
+	color: black;
 	left: 50%;
 	margin-top: 10px;
 	padding: 5px 20px;
 	position: relative;
 	transform: translate(-50%, 0);
+	font-size: 15px;
+	font-weight: 700;
 }
 
 div.product-wrapper button:hover {

@@ -123,6 +123,6 @@
     <?php } ?>
   </div>
   <?php if($countProduct > $allProducts->num_rows()){ ?>
-    <a href="<?= base_url(); ?>product/<?php echo $page+1 ?>"><button class="more">Load More</button></a>
+    <a href="<?= base_url(); ?>product/<?php echo $page+1 ?>"><button class="more">LOAD MORE</button></a>
   <?php } ?>
 </div>
