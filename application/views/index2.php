@@ -1,4 +1,4 @@
-<div class="category-menu">
+<!-- <div class="category-menu">
     <div class="main-category">
       <div class="item" data-toggle="modal" data-target="#modalMoreCategory">
           <img src="<?= base_url(); ?>assets/images/icon/category-more.svg">
@@ -13,10 +13,10 @@
         </a>
       <?php endforeach; ?>
     </div>
-</div>
+</div> -->
 
 <!-- Modal More Category -->
-<div class="modal fade" id="modalMoreCategory" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!-- <div class="modal fade" id="modalMoreCategory" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -39,7 +39,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <?php if($promo->num_rows() > 0){ ?>
 <?php if($setting['promo'] == 1){ ?>
@@ -105,35 +105,24 @@
 
 <div class="product-wrapper">
   <h2 class="title text-center">Islamic Home Decoration</h2>
-  <hr>
+  <p class="text-center">“ The interior can reflect who the owner is ”</p>
+  <!-- <hr> -->
   <div class="main-product ">
     <?php if($allProducts->num_rows() > 0){ ?>
     <?php foreach($allProducts->result_array() as $p): ?>
         <a href="<?= base_url(); ?>p/<?= $p['slug']; ?>">
           <div class="card">
             <img src="<?= base_url(); ?>assets/images/product/<?= $p['img']; ?>" class="card-img-top" >
-            <!-- <div class="card-body">
-              <p class="card-text mb-0"><?= $p['title']; ?></p>
-              <?php if($setting['promo'] == 1){ ?>
-              <?php if($p['promo_price'] == 0){ ?>
-                    <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
-                <?php }else{ ?>
-                    <p class="oldPrice mb-0">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
-                    <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['promo_price'])); ?></p>
-                <?php } ?>
-                <?php }else{ ?>
-                    <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
-                <?php } ?>
-            </div> -->
           </div>
         </a>
     <?php endforeach; ?>
     <div class="clearfix"></div>
+    
     <?php }else{ ?>
       <div class="alert alert-warning">Upss.. Belum ada produk!</div>
     <?php } ?>
   </div>
-  <?php if($allProducts->num_rows() > 12){ ?>
-    <a href="<?= base_url(); ?>products"><button class="more">Selengkapnya</button></a>
+  <?php if($countProduct > $allProducts->num_rows()){ ?>
+    <a href="<?= base_url(); ?>product/<?php echo $page+1 ?>"><button class="more">LOAD MORE</button></a>
   <?php } ?>
 </div>

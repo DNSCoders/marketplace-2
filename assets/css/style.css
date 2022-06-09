@@ -178,7 +178,7 @@ div.product-wrapper {
 	margin: auto;
 	margin-bottom: 70px;
 	position: relative;
-	/* width: 1100px; */
+	max-width: 1100px;
 }
 div.product-wrapper h2.title {
 	color: #222222;
@@ -221,7 +221,7 @@ div.product-wrapper div.main-product div.card {
 	/* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px; */
 	border: none;
 	border-radius: 7px;
-	margin: 0 10px;
+	/* margin: 0 10px; */
 	margin-bottom: 7px;
 	width: 364px;
 }
@@ -274,16 +274,17 @@ div.product-wrapper div.main-product div.card div.card-body p.newPrice {
 }
 
 div.product-wrapper button.more {
-	background-color: white;
-	border: 1px solid #008cd7;
-	border-radius: 3px;
-	color: #008cd7;
-	font-size: 15px;
+	background-color: #CA993B;
+	border: none;
+	border-radius: 30px;
+	color: black;
 	left: 50%;
 	margin-top: 10px;
 	padding: 5px 20px;
 	position: relative;
 	transform: translate(-50%, 0);
+	font-size: 15px;
+	font-weight: 700;
 }
 
 div.product-wrapper button:hover {
