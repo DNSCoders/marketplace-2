@@ -98,7 +98,7 @@
         </div>
     </div>
     <hr>
-    <div class="description">
+    <!-- <div class="description">
         <h2 class="font-weight-bold text-center">Related product</h2>
         <div class="main-product">
 
@@ -154,8 +154,8 @@
                 <span class="sr-only">Next</span>
             </a>
         </div> -->
-    </div>
-    <hr>
+</div> -->
+<hr>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
