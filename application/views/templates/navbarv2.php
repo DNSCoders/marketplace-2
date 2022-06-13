@@ -3,6 +3,7 @@
   <a href="">Daftar</a>
   <a href="">Login</a>
 </div> -->
+<!-- Nabvar 2 -->
 <?php if ($this->session->userdata('login')) { ?>
   <?php
   $user = $this->db->get_where('user', ['id' => $this->session->userdata('id')])->row_array();
@@ -14,7 +15,7 @@
 $menu = $this->db->get('menu');
 $settingss = $this->db->get('settings')->row_array();
 ?>
-<nav class="navbar fixed-top navbar-expand-lg" style="background-color: <?= $this->Settings_model->general()["navbar_color"]; ?> !important">
+<nav class="navbar fixed-top navbar-expand-lg" style="background-color: <?= $this->Settings_model->general()["navbar_color"]; ?> !important;position:absolute !important;">
   <div class="container-fluid" style="max-width: 1150px;">
     <a class="navbar-brand mr-5" href="<?= base_url(); ?>"><img src="<?= base_url(); ?>assets/images/logo/<?= $settingss['logo']; ?>" alt="logo" width="100"></a>
 
