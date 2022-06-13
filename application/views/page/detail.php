@@ -11,12 +11,12 @@
         <div class="main-top">
             <div class="img">
                 <a href="<?= base_url(); ?>assets/images/product/<?= $product['img']; ?>" data-lightbox="img-1">
-                    <img src="<?= base_url(); ?>assets/images/product/<?= $product['img']; ?>" alt="produk" class="jumbo-thumb">
+                    <img src="<?= base_url(); ?>assets/images/product/<?= $product['img']; ?>" alt="produk" style=" pointer-events: none;" class="jumbo-thumb">
                 </a>
                 <div class="img-slider">
-                    <img src="<?= base_url(); ?>assets/images/product/<?= $product['img']; ?>" alt="gambar" class="thumb">
+                    <img src="<?= base_url(); ?>assets/images/product/<?= $product['img']; ?>" style=" pointer-events: none;" alt="gambar" class="thumb">
                     <?php foreach ($img->result_array() as $d) : ?>
-                        <img src="<?= base_url(); ?>assets/images/product/<?= $d['img']; ?>" alt="gambar" class="thumb">
+                        <img src="<?= base_url(); ?>assets/images/product/<?= $d['img']; ?>" style=" pointer-events: none;" alt="gambar" class="thumb">
                     <?php endforeach; ?>
                 </div>
             </div>
@@ -98,9 +98,9 @@
         </div>
     </div>
     <hr>
-    <!-- <div class="description">
+    <div class="description">
         <h2 class="font-weight-bold text-center">Related product</h2>
-        <div class="main-product">
+        <!-- <div class="main-product">
 
             <?php if ($products->num_rows() > 0) { ?>
                 <div style="display: flex;">
@@ -118,17 +118,11 @@
             <?php } else { ?>
                 <div class="alert alert-warning">Upss. Tidak ada produk yang dapat ditampilkan</div>
             <?php } ?>
-        </div>
+        </div> -->
 
-        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="title-head mb-5">
-            </div>
-            <ol class="carousel-indicators">
-                <?php for ($i = 0; $i < ($products->num_rows() / 3); $i++) { ?>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $i ?>" class="active"></li>
-                <?php } ?>
-            </ol>
-            <div class="carousel-inner" style="margin-bottom:100px;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
+
+            <div class="carousel-inner" style="">
                 <?php for ($i = 0; $i < ($products->num_rows() / 3); $i++) { ?>
                     <div class="carousel-item <?= $i == 0 ? 'active' : '' ?>">
                         <div class="container-fluid row d-flex justify-content-center">
@@ -137,8 +131,9 @@
                             for ($j = $i * 3; $j < ($i * 3) + 3; $j++) {
                             ?>
                                 <a href=" <?= base_url(); ?>p/<?= $data[$j]['slug']; ?>" style="display:flex;justify-content: center;">
-                                    <img src="<?= base_url(); ?>assets/images/product/<?= $data[$j]['img']; ?>" class="card-img-top">
+                                    <img src="<?= base_url(); ?>assets/images/product/<?= $data[$j]['img']; ?>" style="height: 591px;width: 390px;">
                                 </a>
+
                             <?php } ?>
                         </div>
                     </div>
@@ -153,9 +148,9 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div> -->
-</div> -->
-<hr>
+        </div>
+    </div>
+    <hr>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
