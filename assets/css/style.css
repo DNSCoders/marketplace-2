@@ -226,6 +226,10 @@ div.product-wrapper div.main-product div.card {
 	width: 364px;
 }
 
+#imgProduct {
+	pointer-events: none;
+}
+
 .slick-slide {
 	outline: none;
 }
@@ -274,7 +278,7 @@ div.product-wrapper div.main-product div.card div.card-body p.newPrice {
 }
 
 div.product-wrapper button.more {
-	background-color: #CA993B;
+	background-color: #ca993b;
 	border: none;
 	border-radius: 30px;
 	color: black;
