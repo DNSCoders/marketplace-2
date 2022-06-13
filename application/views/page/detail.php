@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper" style="margin-top: 5rem;">
     <div class="navigation">
         <a href="<?= base_url(); ?>">Home</a>
         <i class="fa fa-caret-right"></i>
