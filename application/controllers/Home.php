@@ -38,7 +38,7 @@ class Home extends CI_Controller {
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/navbarv2');
 		$this->load->view('templates/banner');
-		$this->load->view('index2', $data);
+		$this->load->view('index3', $data);
 		$this->load->view('page/testiv2', $data);
 		$this->load->view('templates/footer');
 	}
