@@ -1,5 +1,5 @@
 <?php echo $this->session->flashdata('verification'); ?>
-<div class="wrapper">
+<div class="wrapper" style="height: 100vh !important;display:flex;align-items: center;justify-content: center;flex-direction: column;">
     <a href="<?= base_url(); ?>"><h2 class="brand-name"><?= $this->Settings_model->general()["app_name"]; ?></h2></a>
     <p class="subtitle">Reset Password Akun</p>
     <?php echo $this->session->flashdata('failed'); ?>

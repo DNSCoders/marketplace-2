@@ -44,8 +44,8 @@
 
         <div class="form-group input-form">
           <label for="exampleInputEmail1">Password</label>
-          <input type="password" placeholder="Konfirmasi Password" name="password1" class="form-control" autocomplete="off">
-          <small class="form-text text-danger pl-1"><?php echo form_error('password1'); ?></small>
+          <input type="password" placeholder="Konfirmasi Password" name="password" class="form-control" autocomplete="off">
+          <small class="form-text text-danger pl-1"><?php echo form_error('password'); ?></small>
         </div>
 
         <div class="form-group input-form">
