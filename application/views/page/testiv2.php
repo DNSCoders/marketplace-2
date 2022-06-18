@@ -22,7 +22,7 @@
     <?php } ?>
 </div> -->
 <div class="wrapper d-flex justify-content-center align-items-center" style="background-color: #F7F7F7 !important;height:672px;">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" style="margin:auto;" data-ride="carousel">
     <div class="title-head mb-5">
         <h2 class="title text-center">Our clients stories</h2>
     </div>
@@ -34,12 +34,12 @@
       <div class="carousel-inner" style="margin-bottom:100px;">
         <?php for ($i=0; $i < ($testi->num_rows() / 2); $i++) { ?>
             <div class="carousel-item <?= $i == 0 ? 'active' : ''?>">
-                <div class="container-fluid row d-flex justify-content-center">
+                <div class="p-5 row d-flex justify-content-center">
                 <?php 
                 $data = $testi->result_array();
                 for($j=$i * 2; $j < ($i * 2)+2; $j++){ 
                     ?>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6 d-flex flex-column justify-content-center">
                         <div class="card" style="min-height:220px;border:none;background-color:transparent;">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center text-center" style="background-color:#fff;border-clip:border-box;border-radius:20px;">
                             <!-- <h5 class="card-title"><?= $data[$j]['name']; ?></h5> -->

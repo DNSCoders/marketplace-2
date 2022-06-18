@@ -1,4 +1,4 @@
-<div class="product-wrapper">
+<div class="product-wrapper pt-5">
   <h2 class="title text-center">Islamic Home Decoration</h2>
   <p class="text-center">“ The interior can reflect who the owner is ”</p>
   <!-- <hr> -->
@@ -19,12 +19,12 @@
             <?php for ($z=$startIndex; $z < ($startIndex + ($allProducts->num_rows()/3)); $z++) { 
                 $p = $products[$z];
                 ?>
-                <a 
+                <a id="content-img"
                     href="<?= base_url(); ?>p/<?= $p['slug']; ?>"
                     style="
                                 padding:0;
                                 width:364px;">
-                    <img 
+                    <img id="imgProduct" onContextMenu="return false;"
                         src="<?= base_url(); ?>assets/images/product/<?= $p['img']; ?>" 
                         style="
                                 vertical-align: middle;

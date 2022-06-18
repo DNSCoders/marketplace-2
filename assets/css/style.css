@@ -230,6 +230,10 @@ div.product-wrapper div.main-product div.card {
 	pointer-events: none;
 }
 
+#content-img  {
+	cursor: grab;
+}
+
 .slick-slide {
 	outline: none;
 }
@@ -304,9 +308,9 @@ div.product-wrapper button:hover {
 
 @media screen and (max-width: 800px) {
 	.column {
-	  -ms-flex: 50%;
-	  flex: 50%;
-	  max-width: 50%;
+	  -ms-flex: 100%;
+	  flex: 100%;
+	  max-width: 100%;
 	}
   }
   
