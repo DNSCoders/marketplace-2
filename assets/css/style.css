@@ -230,6 +230,10 @@ div.product-wrapper div.main-product div.card {
 	pointer-events: none;
 }
 
+#content-img  {
+	cursor: grab;
+}
+
 .slick-slide {
 	outline: none;
 }
