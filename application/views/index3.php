@@ -1,4 +1,4 @@
-<div class="product-wrapper">
+<div class="product-wrapper pt-5">
   <h2 class="title text-center">Islamic Home Decoration</h2>
   <p class="text-center">“ The interior can reflect who the owner is ”</p>
   <!-- <hr> -->
