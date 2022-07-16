@@ -32,7 +32,7 @@ class Profile extends CI_Controller {
         $data['title'] = 'Profil - ' . $this->Settings_model->general()["app_name"];
         $data['css'] = 'profile';
         $this->load->view('templates/header', $data);
-        $this->load->view('templates/navbar');
+        $this->load->view('templates/navbarv2');
         $this->load->view('profile/index');
         $this->load->view('templates/footerv2');
     }
@@ -42,7 +42,7 @@ class Profile extends CI_Controller {
         $data['css'] = 'profile';
         $data['transaction'] = $this->User_model->getOrder();
         $this->load->view('templates/header', $data);
-        $this->load->view('templates/navbar');
+        $this->load->view('templates/navbarv2');
         $this->load->view('profile/order', $data);
         $this->load->view('templates/footerv2');
     }
@@ -56,7 +56,7 @@ class Profile extends CI_Controller {
         $data['css'] = 'profile';
         $data['product_order'] = $this->User_model->getProductByInvoice($id);
         $this->load->view('templates/header', $data);
-        $this->load->view('templates/navbar');
+        $this->load->view('templates/navbarv2');
         $this->load->view('profile/detail_order', $data);
         $this->load->view('templates/footerv2');
     }
@@ -82,7 +82,7 @@ class Profile extends CI_Controller {
         $data['css'] = 'profile';
         $data['finish'] = $this->User_model->getFinishOrder();
         $this->load->view('templates/header', $data);
-        $this->load->view('templates/navbar');
+        $this->load->view('templates/navbarv2');
         $this->load->view('profile/histories', $data);
         $this->load->view('templates/footerv2');
     }
@@ -95,7 +95,7 @@ class Profile extends CI_Controller {
             $data['css'] = 'profile';
             $data['user'] = $this->User_model->getProfile();
             $this->load->view('templates/header', $data);
-            $this->load->view('templates/navbar');
+            $this->load->view('templates/navbarv2');
             $this->load->view('profile/edit_profile', $data);
             $this->load->view('templates/footerv2');
         }else{
@@ -142,7 +142,7 @@ class Profile extends CI_Controller {
             $data['title'] = 'Ganti Kata Sandi - ' . $this->Settings_model->general()["app_name"];
             $data['css'] = 'profile';
             $this->load->view('templates/header', $data);
-            $this->load->view('templates/navbar');
+            $this->load->view('templates/navbarv2');
             $this->load->view('profile/change_password', $data);
             $this->load->view('templates/footerv2');
         }else{

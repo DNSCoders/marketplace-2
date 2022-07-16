@@ -17,7 +17,7 @@ class Promo extends CI_Controller {
 		$data['promo'] = $this->Promo_model->getPromo();
 		$data['setting'] = $this->Settings_model->getSetting();
 		$this->load->view('templates/header', $data);
-		$this->load->view('templates/navbar');
+		$this->load->view('templates/navbarv2');
 		$this->load->view('page/promo', $data);
 		$this->load->view('templates/footerv2');
 	}

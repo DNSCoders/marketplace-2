@@ -68,7 +68,7 @@ class Products extends CI_Controller
 		$data['css'] = 'products';
 		$data['responsive'] = 'product-responsive';
 		$this->load->view('templates/header', $data);
-		$this->load->view('templates/navbar');
+		$this->load->view('templates/navbarv2');
 		$this->load->view('page/products', $data);
 		$this->load->view('templates/footerv2');
 	}

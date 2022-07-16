@@ -75,7 +75,7 @@ class Categories extends CI_Controller
 		$data['nameCat'] = $this->Categories_model->getNameCategoryBySlug($c);
 
 		$this->load->view('templates/header', $data);
-		$this->load->view('templates/navbar');
+		$this->load->view('templates/navbarv2');
 		$this->load->view('page/categories', $data);
 		$this->load->view('templates/footerv2');
 	}

@@ -15,7 +15,7 @@ class Testimoni extends CI_Controller {
     $data['responsive'] = 'product-responsive';
     $data['testi'] = $this->Testi_model->getTesti();
     $this->load->view('templates/header', $data);
-		$this->load->view('templates/navbar');
+		$this->load->view('templates/navbarv2');
 		$this->load->view('page/testi', $data);
 		$this->load->view('templates/footerv2');
     }
