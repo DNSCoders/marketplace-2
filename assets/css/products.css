@@ -13,6 +13,7 @@ div.wrapper div.title-head {
 	box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 	padding: 15px 30px;
 	width: 100%;
+	margin-top: 4rem;
 }
 
 div.wrapper div.title-head h2.title {
