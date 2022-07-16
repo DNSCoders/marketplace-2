@@ -37,7 +37,7 @@ class Payment extends CI_Controller {
         $data['cart'] = $this->Order_model->getCartUser();
         $data['provinces'] = $this->Payment_model->getProvinces();
         $this->load->view('templates/header', $data);
-        $this->load->view('templates/navbar');
+        $this->load->view('templates/navbarv2');
         $this->load->view('page/payment', $data);
         $this->load->view('templates/footerv2');
     }
@@ -99,7 +99,7 @@ class Payment extends CI_Controller {
             $data['title'] = 'Bukti Pembayaran - ' . $this->Settings_model->general()["app_name"];
             $data['css'] = '';
             $this->load->view('templates/header', $data);
-            $this->load->view('templates/navbar');
+            $this->load->view('templates/navbarv2');
             $this->load->view('page/payment_proof');
             $this->load->view('templates/footer_notmpl');
         }else{
