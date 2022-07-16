@@ -67,7 +67,8 @@ class User_model extends CI_Model {
                 'password' => password_hash($password, PASSWORD_DEFAULT),
                 'date_register' => date('Y-m-d H:i:s'),
                 'token' => $token,
-                'photo_profile' => 'default.png'
+                'photo_profile' => 'default.png',
+                'is_activate' => 1,
             ];
             $this->db->insert('user', $data);
 
